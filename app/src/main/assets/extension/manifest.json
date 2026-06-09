@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Web2APK Injector",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "inject_end.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ]
+}
